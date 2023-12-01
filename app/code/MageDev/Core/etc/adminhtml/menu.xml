@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MageDev_Core::menu" title="Mage Developer" module="MageDev_Core" sortOrder="50" resource="MageDev_Core::menu"/>
+    </menu>
+</config>
