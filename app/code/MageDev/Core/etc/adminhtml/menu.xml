@@ -2,5 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
         <add id="MageDev_Core::menu" title="Mage Developer" module="MageDev_Core" sortOrder="50" resource="MageDev_Core::menu"/>
+        <add id="MageDev_Core::form" title="MageDev Form" module="MageDev_Core" parent="MageDev_Core::menu" sortOrder="40" resource="MageDev_Core::form"/>
+        <add id="MageDev_Core::image" title="MageDev Image" module="MageDev_Core" parent="MageDev_Core::menu" sortOrder="50" resource="MageDev_Core::image"/>
     </menu>
 </config>
