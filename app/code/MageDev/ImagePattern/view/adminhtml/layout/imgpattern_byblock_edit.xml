@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="MageDev\ImagePattern\Block\Adminhtml\ByBlock\Edit" name="magedev_imagepattern_image_edit"/>
+        </referenceContainer>
+        <referenceContainer name="left">
+            <block class="MageDev\ImagePattern\Block\Adminhtml\ByBlock\Edit\Tabs" name="magedev_imagepattern_image_tabs">
+                <block class="MageDev\ImagePattern\Block\Adminhtml\ByBlock\Edit\Tab\Image" name="magedev_imagepattern_edit_tab_image"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">test</argument>
+                    <argument name="block" xsi:type="string">magedev_imagepattern_edit_tab_image</argument>
+                </action>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

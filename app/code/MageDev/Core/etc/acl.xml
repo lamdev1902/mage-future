@@ -3,7 +3,10 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="MageDev_Core::menu" title="Magento Developer" sortOrder="50"/>
+                <resource id="MageDev_Core::menu" title="Magento Developer" sortOrder="100">
+                    <resource id="MageDev_Core::form" title="Magento Developer" sortOrder="50"/>
+                    <resource id="MageDev_Core::image" title="MageDev Image" sortOrder="60"/>
+                </resource>
             </resource>
         </resources>
     </acl>

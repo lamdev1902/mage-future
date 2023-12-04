@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="MageDev_Core::menu">
+                    <resource id="MageDev_Core::image">
+                        <resource id="MageDev_ImagePattern::byblock" title="Image Pattern By Block" sortOrder="50"/>
+                        <resource id="MageDev_ImagePattern::byUiComponent" title="Image Pattern By Block" sortOrder="60"/>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

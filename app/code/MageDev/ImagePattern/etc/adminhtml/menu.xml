@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MageDev_ImagePattern::byblock" title="Image By Block" module="MageDev_ImagePattern" sortOrder="40" action="imgpattern/byblock/index" parent="MageDev_Core::image" resource="MageDev_ImagePattern::byblock"/>
+        <add id="MageDev_ImagePattern::byUiComponent" title="Image By UiComponent" module="MageDev_ImagePattern" sortOrder="50" action="imgpattern/byuicomponent/index" parent="MageDev_Core::image" resource="MageDev_ImagePattern::byUiComponent"/>
+    </menu>
+</config>
