@@ -1,0 +1,23 @@
+{
+    "magedev_assign_pattern": {
+        "column": {
+            "entity_id": true,
+            "title": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "magedev_assign_pattern_core": {
+        "column": {
+            "assign_id": true,
+            "core_id": true,
+            "position": true
+        },
+        "constraint": {
+            "FK_CD1121FE64B2BD8261A03FEAD4706DAF": true,
+            "MAGEDEV_ASSIGN_PATTERN_CORE_CORE_ID_MAGEDEV_CORE_TEST_ENTITY_ID": true,
+            "PRIMARY": true
+        }
+    }
+}

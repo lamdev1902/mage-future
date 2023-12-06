@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="MageDev_Core::menu" title="MageDev Menu" sortOrder="10">
+                    <resource id="MageDev_Core::assign" title="Assign" sortOrder="10">
+                        <resource id="MageDev_AssignPattern::byblock" title="Assign Pattern By Block" sortOrder="10"/>
+                        <resource id="MageDev_AssignPattern::byUiComponent" title="Assign Pattern By UI Component" sortOrder="20"/>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
