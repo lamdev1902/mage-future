@@ -4,5 +4,6 @@
         <add id="MageDev_Core::menu" title="Mage Developer" module="MageDev_Core" sortOrder="50" resource="MageDev_Core::menu"/>
         <add id="MageDev_Core::form" title="MageDev Form" module="MageDev_Core" parent="MageDev_Core::menu" sortOrder="40" resource="MageDev_Core::form"/>
         <add id="MageDev_Core::image" title="MageDev Image" module="MageDev_Core" parent="MageDev_Core::menu" sortOrder="50" resource="MageDev_Core::image"/>
+        <add id="MageDev_Core::assign" title="MageDev Assign" module="MageDev_Core" parent="MageDev_Core::menu" sortOrder="60" resource="MageDev_Core::assign"/>
     </menu>
 </config>

@@ -1,5 +1,5 @@
 <?php
-namespace MageDev\ImagePattern\Ui\Component\Listing\Column\ByUiComponent;
+namespace MageDev\AssignPattern\Ui\Component\Listing\Column\ByBlock;
 
 use Magento\Framework\UrlInterface;
 use Magento\Framework\View\Element\UiComponent\ContextInterface;
@@ -13,7 +13,7 @@ class Actions extends Column
      *
      * @var string
      */
-    const URL_PATH_EDIT = 'imgpattern/byuicomponent/edit';
+    const URL_PATH_EDIT = 'assign/byblock/edit';
 
     /**
      * URL builder

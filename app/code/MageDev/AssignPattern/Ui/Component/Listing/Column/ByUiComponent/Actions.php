@@ -1,5 +1,5 @@
 <?php
-namespace MageDev\ImagePattern\Ui\Component\Listing\Column\ByUiComponent;
+namespace MageDev\AssignPattern\Ui\Component\Listing\Column\ByUiComponent;
 
 use Magento\Framework\UrlInterface;
 use Magento\Framework\View\Element\UiComponent\ContextInterface;
@@ -13,7 +13,7 @@ class Actions extends Column
      *
      * @var string
      */
-    const URL_PATH_EDIT = 'imgpattern/byuicomponent/edit';
+    const URL_PATH_EDIT = 'assign/byuicomponent/edit';
 
     /**
      * URL builder
@@ -59,7 +59,7 @@ class Actions extends Column
                         'href' => $this->urlBuilder->getUrl(
                             static::URL_PATH_EDIT,
                             [
-                                'entity_id' => $item['entity_id']
+                                'id' => $item['entity_id']
                             ]
                         ),
                         'label' => __('Edit')

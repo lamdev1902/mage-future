@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MageDev_AssignPattern::byblock" title="Assign Data By Block" module="MageDev_AssignPattern" parent="MageDev_Core::assign" sortOrder="10" action="assign/byblock/index" resource="MageDev_AssignPattern::byblock"/>
+        <add id="MageDev_AssignPattern::byUiComponent" title="Assign Data By UiComponent" module="MageDev_AssignPattern" parent="MageDev_Core::assign" sortOrder="10" action="assign/byuicomponent/index" resource="MageDev_AssignPattern::byUiComponent"/>
+    </menu>
+</config>
