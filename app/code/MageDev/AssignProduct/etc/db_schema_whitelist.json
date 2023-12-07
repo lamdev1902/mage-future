@@ -1,0 +1,25 @@
+{
+    "magedev_assign_product": {
+        "column": {
+            "entity_id": true,
+            "title": true
+        },
+        "index": {
+            "MAGEDEV_ASSIGN_PRODUCT_ENTITY_ID": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "magedev_assign_product_match_product": {
+        "column": {
+            "assign_id": true,
+            "product_id": true
+        },
+        "constraint": {
+            "FK_D679653BC7556BC4BD8A7AC51771584B": true,
+            "MAGEDEV_ASSIGN_PRD_MATCH_PRD_PRD_ID_CAT_PRD_ENTT_ENTT_ID": true,
+            "PRIMARY": true
+        }
+    }
+}

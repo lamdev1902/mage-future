@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MageDev_AssignProduct::assignproduct" title="Assign Product" module="MageDev_AssignProduct" parent="MageDev_Core::assign" sortOrder="10" action="assign_product/product/index" resource="MageDev_AssignProduct::assignproduct"/>
+    </menu>
+</config>

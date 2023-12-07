@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="MageDev\AssignProduct\Model\ResourceModel\Assign\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">magedev_assign_product</argument>
+            <argument name="resourceModel" xsi:type="string">MageDev\AssignProduct\Model\ResourceModel\Assign</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="assign_product_product_listing_data_source" xsi:type="string">MageDev\AssignProduct\Model\ResourceModel\Assign\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
