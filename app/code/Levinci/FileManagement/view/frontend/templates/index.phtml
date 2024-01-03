@@ -1,0 +1,30 @@
+<?php 
+   $helper = $this->helper('\Levinci\FileManagement\Helper\Data');
+   $baseUrl = $helper->getBaseUrl();
+?>
+<div class="container">
+   <h2 class="title">CO-OP CLAIM HOME</h2>
+   <form id=contact-form class="form contact" action="<?php echo $baseUrl ?>/upload/upload/file" method="post" enctype="multipart/form-data" data-bind="mageInit: {'validation': {}}">
+    <fieldset class="fieldset">
+        <div class="field resume">
+          <label class="label" for="resume"><span><?= $block->escapeHtml(__('Resume')) ?></span> </label>
+          <div class="control">
+             <input name="resume" id="resume" title="<?= $block->escapeHtmlAttr(__('Resume')) ?>" class="input-file" type="file" />
+          </div>
+       </div>
+    </fieldset>
+    <fieldset class=fieldset>
+        <div class="field is_required">
+            <input type="radio" id="pre_authorization" name="is_required" value="0">
+            <label for="pre_authorization"><?= $block->escapeHtml(__('CO-OP Pre-Authorization')) ?></label><br>
+            <input type="radio" id="claim" name="is_required" value="1">
+            <label for="claim"><?= $block->escapeHtml(__('CO-OP Claim')) ?></label><br>
+         </div>
+    </fieldset>
+    <div class=actions-toolbar>
+       <div class="primary">
+        <button type="submit" title="<?= $block->escapeHtmlAttr(__('Submit')) ?>" class="action submit primary"><span><?= $block->escapeHtml(__('Submit')) ?></span></button>
+        </div>
+    </div>
+</form>
+</div>

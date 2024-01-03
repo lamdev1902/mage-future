@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Levinci_FileManagement::menu" title="Levinci" module="Levinci_FileManagement" sortOrder="50" resource="Levinci_FileManagement::menu"/>
+        <add id="Levinci_FileManagement::fileManagement" title="Levinci File Management" module="Levinci_FileManagement" sortOrder="40" action="filemanage/filemanagement/index" parent="Levinci_FileManagement::menu" resource="Levinci_FileManagement::fileManagement"/>
+    </menu>
+</config>

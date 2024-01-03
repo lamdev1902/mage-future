@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="FileManageUploader" type="Levinci\FileManagement\Model\FileUploader">
+        <arguments>
+            <argument name="baseTmpPath" xsi:type="string">customer/upload/file</argument>
+            <argument name="basePath" xsi:type="string">filemanage/file</argument>
+            <argument name="allowedExtensions" xsi:type="array">
+                <item name="pdf" xsi:type="string">pdf</item>
+                <item name="doc" xsi:type="string">doc</item>
+                <item name="docx" xsi:type="string">docx</item>
+            </argument>
+            <argument name="allowedMimeTypes" xsi:type="array">
+                <item name="pdf" xsi:type="string">application/pdf</item>
+                <item name="doc" xsi:type="string">application/msword</item>
+                <item name="docx" xsi:type="string">application/vnd.openxmlformats-officedocument.wordprocessingml.document</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Levinci\FileManagement\Controller\FileManagement\Upload">
+        <arguments>
+            <argument name="fileUploader" xsi:type="object">FileManageUploader</argument>
+        </arguments>
+    </type>
+
+    <virtualType name="Levinci\FileManagement\Model\ResourceModel\FileManagement\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">user_file_management</argument>
+            <argument name="resourceModel" xsi:type="string">Levinci\FileManagement\Model\ResourceModel\FileManagement</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="filemanage_listing_data_source" xsi:type="string">Levinci\FileManagement\Model\ResourceModel\FileManagement\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="\Magento\Customer\Controller\Account\LoginPost">
+        <plugin name="redirect_custom_url" type="\Levinci\FileManagement\Plugin\RedirectCustomUrl" sortOrder="1"/>
+    </type>
+</config>

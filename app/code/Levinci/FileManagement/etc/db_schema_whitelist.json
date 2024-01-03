@@ -1,0 +1,16 @@
+{
+    "user_file_management": {
+        "column": {
+            "entity_id": true,
+            "customer_id": true,
+            "is_required": true,
+            "file": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "constraint": {
+            "USER_FILE_MANAGEMENT_CUSTOMER_ID_CUSTOMER_ENTITY_ENTITY_ID": true,
+            "PRIMARY": true
+        }
+    }
+}
